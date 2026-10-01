@@ -1,27 +1,27 @@
 /* =====================================================================
    CP Concrete Solutions — Homepage
    Design system: concrete repair & construction × editorial
-   Brand: golden yellow on charcoal
+   Brand: olive green on neutral charcoal (from CP logo)
    ===================================================================== */
 
 /* ---------- Design tokens ---------- */
 :root {
-  /* palette — CP Concrete Solutions: golden yellow on charcoal */
-  --graphite:      #1c2733;   /* charcoal (dark sections / header / logo bg) */
-  --charcoal:      #26333f;   /* charcoal 2 */
-  --slate:         #4a5866;   /* slate */
-  --concrete:      #7e8b98;   /* muted slate */
-  --concrete-2:    #b3bec8;   /* light slate */
+  /* palette — CP Concrete Solutions LLC: olive green on neutral charcoal (from logo) */
+  --graphite:      #16180f;   /* charcoal (dark sections / header / logo bg) */
+  --charcoal:      #20231a;   /* charcoal 2 */
+  --slate:         #4b5141;   /* slate */
+  --concrete:      #868d7c;   /* muted slate */
+  --concrete-2:    #c2c7b7;   /* light slate */
   --paper:         #eef2f5;   /* light cool gray */
   --off-white:     #f6f9fb;
   --white:         #ffffff;
-  --accent:        #f2b01e;   /* brand construction orange */
-  --accent-deep:   #c98a0f;   /* deep orange (text on light) */
+  --accent:        #6d9b1e;   /* brand olive green (from logo) */
+  --accent-deep:   #4e7014;   /* deep olive (text on light) */
 
   --ink:           #1f2a33;   /* dark slate headings */
   --ink-soft:      #55626c;
   --line:          #dde4ea;   /* hairline */
-  --line-dark:     #30404c;
+  --line-dark:     #2c3022;
 
   /* logo contexts */
   --logo-mark-bg:  var(--graphite);
@@ -37,7 +37,7 @@
   --shell:        1240px;
   --gutter:       clamp(20px, 5vw, 64px);
   --radius:       4px;
-  --header-h:     84px;
+  --header-h:     120px;
   --ease:         cubic-bezier(.22,.61,.36,1);
 
   --shadow-sm:    0 1px 2px rgba(20,22,24,.06), 0 4px 14px rgba(20,22,24,.06);
@@ -125,7 +125,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
-.btn--primary { --btn-bg: var(--accent); --btn-fg: #17140c; --btn-bd: var(--accent); }
+.btn--primary { --btn-bg: var(--accent); --btn-fg: #ffffff; --btn-bd: var(--accent); }
 .btn--primary:hover { --btn-bg: var(--accent-deep); --btn-bd: var(--accent-deep); box-shadow: 0 12px 26px -12px rgba(242,176,30,.6); }
 .btn--outline { --btn-bg: transparent; --btn-fg: var(--ink); --btn-bd: var(--ink); }
 .btn--outline:hover { --btn-bg: var(--ink); --btn-fg: var(--off-white); }
@@ -137,8 +137,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Logo ---------- */
 .logo { display: inline-flex; align-items: center; gap: 13px; }
-.logo__mark { flex: none; height: 82px; width: auto; display: block; color: var(--graphite); }
-.site-header[data-scrolled] .logo__mark { height: 62px; transition: height .3s var(--ease); }
+.logo__mark { flex: none; height: 94px; width: auto; display: block; color: var(--graphite); }
+.site-header[data-scrolled] .logo__mark { height: 72px; transition: height .3s var(--ease); }
 
 /* text logo (CP Concrete Solutions text logo) */
 .logo__text { display: flex; flex-direction: column; line-height: 1; border-left: 3px solid var(--accent); padding-left: 13px; }
@@ -166,7 +166,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   transition: border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease), backdrop-filter .3s var(--ease);
 }
 .site-header[data-scrolled] {
-  background: rgba(24,29,33,.96);
+  background: rgba(18,20,13,.96);
   backdrop-filter: saturate(140%) blur(12px);
   -webkit-backdrop-filter: saturate(140%) blur(12px);
   border-bottom-color: rgba(255,255,255,.1);
@@ -522,7 +522,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer__bar { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 24px; border-top: 1px solid var(--line-dark); font-size: .84rem; color: var(--concrete); }
 .footer__meta { color: var(--concrete); }
 .footer__addr { display: block; padding: 6px 0; color: var(--concrete-2); font-size: .95rem; }
-.footer__brand .logo__mark { height: 60px; }
+.footer__brand .logo__mark { height: 108px; }
 
 /* ---------- Reviews ---------- */
 .reviews__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -554,11 +554,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 @media (max-width: 900px) {
-  :root { --header-h: 84px; }
+  :root { --header-h: 92px; }
   .nav, .header__actions { display: none; }
   .menu-toggle { display: flex; }
-  .logo__mark { height: 62px; }
-  .site-header[data-scrolled] .logo__mark { height: 54px; }
+  .logo__mark { height: 70px; }
+  .site-header[data-scrolled] .logo__mark { height: 60px; }
   .site-header[data-scrolled] .header__inner { height: 72px; }
   .hero__inner { padding-block: clamp(108px, 22vw, 156px) clamp(56px, 12vw, 96px); }
   .hero__bg .hero__video { object-position: center 35%; }
