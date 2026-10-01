@@ -243,8 +243,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   content: ""; position: absolute; inset: 0;
   /* cinematic dark scrim, weighted left (behind text) and along the bottom */
   background:
-    linear-gradient(95deg, rgba(18,22,26,.94) 0%, rgba(18,22,26,.80) 42%, rgba(18,22,26,.48) 72%, rgba(18,22,26,.34) 100%),
-    linear-gradient(0deg, rgba(18,22,26,.72) 0%, rgba(18,22,26,0) 42%);
+    linear-gradient(95deg, rgba(10,11,8,.97) 0%, rgba(10,11,8,.90) 40%, rgba(10,11,8,.66) 70%, rgba(10,11,8,.48) 100%),
+    linear-gradient(0deg, rgba(10,11,8,.82) 0%, rgba(10,11,8,0) 46%);
 }
 .hero__inner { position: relative; z-index: 1; padding-block: clamp(128px, 14vw, 208px) clamp(80px, 9vw, 140px); }
 .hero__content { max-width: 60ch; }
@@ -252,10 +252,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .hero__title {
   font-weight: 900; font-size: clamp(2.9rem, 7vw, 5.4rem); color: var(--white);
   margin: .2em 0 .5em; letter-spacing: -.03em;
-  text-shadow: 0 2px 30px rgba(0,0,0,.4);
+  text-shadow: 0 2px 24px rgba(0,0,0,.75), 0 1px 3px rgba(0,0,0,.6);
 }
 .hero__title-accent { color: var(--accent); }
-.hero__lede { font-size: clamp(1.05rem, 1.5vw, 1.28rem); color: rgba(247,248,246,.92); max-width: 48ch; }
+.hero__lede { font-size: clamp(1.05rem, 1.5vw, 1.28rem); color: #ffffff; max-width: 48ch; text-shadow: 0 1px 10px rgba(0,0,0,.65); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 2rem 0 1.8rem; }
 .hero__phone { display: inline-flex; flex-direction: column; }
 .hero__phone-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(247,248,246,.7); font-weight: 600; }
